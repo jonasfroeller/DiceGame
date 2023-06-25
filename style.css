@@ -1,0 +1,179 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(147, 175, 199);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.current-game {
+    background-color: rgb(86, 86, 104);
+    padding: 1%;
+    width: calc(100% - 2%);
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+}
+
+#output {
+    background-color: rgb(136, 136, 167);
+    padding: 1%;
+    width: auto;
+    border-radius: 1vh;
+}
+
+.allGamesInThisSession {
+    background-color: rgb(86, 86, 104);
+    padding: 1%;
+    width: calc(100% - 2%);
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+}
+
+#output-2 {
+    background-color: rgb(136, 136, 167);
+    padding: 1%;
+    width: auto;
+    border-radius: 1vh;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: aliceblue;
+}
+
+img {
+    width: 10%;
+    vertical-align: middle;
+    transition: 0.3s ease-in-out;
+}
+
+img.small-image {
+    width: 5%;
+}
+
+img:hover {
+    filter: brightness(50%);
+    cursor: pointer;
+}
+
+.imgBackgroundOne {
+    background-color: rgb(255, 255, 255);
+    border-radius: 3vh;
+}
+
+.imgBackgroundTwo {
+    background-color: rgb(255, 255, 255);
+    border-radius: 3vh;
+}
+
+#button-1, #button-2 {
+    margin: 1%;
+    padding: 1%;
+    width: fit-content;
+    font-size: 125%;
+    background-color: rgb(86, 86, 104);
+    cursor: pointer;
+    border-radius: 1vh;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+}
+
+#button-1:hover, #button-2:hover {
+    background-color: rgb(136, 136, 167);
+    color: rgb(56, 59, 61);
+}
+
+.winner {
+    color: green;
+}
+
+.looser {
+    color: red;
+}
+
+.winner-cube-theme {
+    border: 0.25rem solid green;
+}
+
+.looser-cube-theme {
+    border: 0.25rem solid red;
+}
+
+.play-area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    margin: 1%;
+    padding: 1.25%;
+    width: 40%;
+    font-size: 250%;
+    background-color: rgb(86, 86, 104);
+    cursor: pointer;
+    border-radius: 1vh;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(136, 136, 167);
+    color: rgb(56, 59, 61);
+}
+
+form {
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+#namePlayerOne, #namePlayerTwo {
+    background-color: rgb(86, 86, 104);
+    color: aliceblue;
+    border-radius: 1vh;
+    padding: 1%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    transition: 0.3s ease-in-out;
+}
+
+#namePlayerOne:hover, #namePlayerTwo:hover {
+    background-color: rgb(136, 136, 167);
+    color: rgb(56, 59, 61);
+    border-radius: 1vh;
+}
+
+.color-input {
+    background-color: rgb(86, 86, 104);
+    color: aliceblue;
+    border-radius: 1vh;
+    padding: 1%;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.submitButton {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    background-color: rgb(86, 86, 104);
+    padding: 1%;
+    border-radius: 1vh;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.submitButton:hover {
+    color: rgb(56, 59, 61);
+    background-color: rgb(136, 136, 167);
+}

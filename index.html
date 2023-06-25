@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="defaultStyle()">
+    <main class="content">
+        <section class="play-area">
+            <form>
+                <div>
+                    Name [P1]: <input type="text" name="namePlayerOne" id="namePlayerOne" value="User-1">
+                    <div class="submitButton" onclick="saveNameOne()">Submit Name</div>
+                </div>
+                <div>
+                    <label class="color-input" for="colorPlayerOne">Color: <input type="color" name="colorPlayerOne"
+                            id="colorPlayerOne" value="#00ff00"></label>
+                    <div class="submitButton" onclick="saveColorOne()">Submit Color</div>
+                </div>
+            </form>
+            <form>
+                <div>
+                    Name [P2]: <input type="text" name="namePlayerTwo" id="namePlayerTwo" value="User-2">
+                    <div class="submitButton" onclick="saveNameTwo()">Submit Name</div>
+                </div>
+                <div>
+                    <label class="color-input" for="colorPlayerTwo">Color: <input type="color" name="colorPlayerTwo"
+                            id="colorPlayerTwo" value="#0000ff"></label>
+                    <div class="submitButton" onclick="saveColorTwo()">Submit Color</div>
+                </div>
+            </form>
+        </section>
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <button id="button-1" onclick="delayedPlayerOne()">Play User-1</button>
+            <button id="button-2" onclick="delayedPlayerTwo()">Play User-2</button>
+        </div>
+        <div class="current-game">
+            <h1>Current Game</h1>
+            <div id="output"></div>
+        </div>
+        <div class="allGamesInThisSession">
+            <h1>All Games</h1>
+            <div id="output-2"></div>
+        </div>
+
+        <button style="display: block; margin: auto; margin-top: 1rem; min-width: fit-content;"
+            onclick="reset()">Reset</button>
+        </ma>
+</body>
+
+</html>
